@@ -186,50 +186,6 @@ img {
   right: 0;
 }
 
-.home {
-  height: calc(100vh - 3rem);
-  row-gap: 1rem;
-}
-
-.home_data {
-  align-self: center;
-}
-
-.home_title {
-  font-size: var(--big-font-size);
-  margin-bottom: var(--mb-5);
-}
-
-.home_title-color {
-  color: var(--first-color);
-}
-
-.home_social {
-  display: flex;
-  flex-direction: column;
-}
-
-.home_social-icon {
-  width: max-content;
-  margin-bottom: var(--mb-2);
-  font-size: 1.5rem;
-  color: var(--second-color);
-}
-
-.home_social-icon:hover {
-  color: var(--first-color);
-}
-
-.home_img {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 300px;
-}
-
-.home_img svg {
-  width: 100%;
-}
 
 /* BUTTONS */
 .button {
@@ -244,6 +200,7 @@ img {
 .button:hover {
   box-shadow: 0 10px 36px rgba(0, 0, 0, 0.15);
 }
+
 
 .section {
   padding-top: 3rem;
@@ -271,6 +228,64 @@ img {
   background-color: var(--first-color);
 }
 
+
+/* HOME */
+.home {
+  height: calc(100vh - 3rem);
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.home_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home_data {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.home_title {
+  font-size: var(--big-font-size);
+  margin-bottom: var(--mb-2);
+}
+
+.home_title-color {
+  color: var(--first-color);
+}
+
+.home_description {
+  margin-bottom: var(--mb-4);
+}
+
+.home_img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_container {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--first-color);
+}
+
+.home_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
 /* ABOUT SECTION */
 .about_container {
   max-width: 800px;
@@ -294,6 +309,7 @@ img {
 }
 
 /* SKILLS */
+/*
 .skills_container {
   max-width: 1000px;
   margin: 0 auto;
@@ -353,6 +369,100 @@ img {
     font-size: 0.8rem;
   }
 }
+*/
+
+/* SKILLS */
+.skills_container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.skills_subsection {
+  margin-bottom: 2rem;
+}
+
+.subsection-title {
+  font-size: 1.5rem;
+  color: var(--first-color);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.skills_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.skills_item {
+  background-color: var(--white-color);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(14, 36, 49, 0.1);
+  position: relative;
+  overflow: hidden;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills_item:hover {
+  box-shadow: 0 6px 20px rgba(14, 36, 49, 0.2);
+}
+
+.skill_name {
+  font-size: 0.9rem;
+  font-weight: var(--font-semi);
+  color: var(--text-color);
+}
+
+.skill_bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  background-color: var(--first-color);
+  width: 100%;
+}
+
+.certification_item {
+  height: auto;
+}
+
+.certification_link {
+  font-size: 0.8rem;
+  color: var(--first-color);
+  text-decoration: none;
+  margin-top: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.certification_link:hover {
+  color: var(--second-color);
+}
+
+@media screen and (max-width: 768px) {
+  .skills_grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  
+  .skills_item {
+    height: 70px; 
+  }
+  
+  .skill_name {
+    font-size: 0.8rem;
+  }
+
+  .certification_item {
+    height: auto;
+  }
+}
 
 /* EXPERIENCE */
 
@@ -410,6 +520,7 @@ img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  border-radius: 50%;
 }
 
 .work_info {
@@ -563,7 +674,6 @@ img {
   }
 }
 
-
 /* Footer */
 .footer {
   background-color: var(--second-color);
@@ -603,6 +713,22 @@ img {
 
 /* Responsive design */
 @media screen and (max-width: 768px) {
+
+  .home_content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home_data {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .img_container {
+    width: 250px;
+    height: 250px;
+  }
+
   .footer {
     padding: 1.5rem 1rem;
   }
@@ -685,7 +811,7 @@ img {
     bottom: 15%;
   }
 
-  .home_img svg {
+  .home_img img {
     width: 100%;
   }
 
@@ -701,7 +827,6 @@ img {
     grid-template-rows: repeat(2, 1fr);
     column-gap: 2rem;
   }
-
 }
 
 @media screen and (min-width: 1024px) {

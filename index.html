@@ -23,9 +23,6 @@
         <div class="nav_menu" id="nav_menu">
           <ul class="nav_list">
             <li class="nav_items">
-              <a href="#home" class="nav_link active">Home</a>
-            </li>
-            <li class="nav_items">
               <a href="#about" class="nav_link active">About</a>
             </li>
             <li class="nav_items">
@@ -50,45 +47,22 @@
     </header>
 
     <main class="main">
+
       <!-- HOME SECTION -->
       <section class="home bd_grid" id="home">
-        <div class="home_data" data-aos="fade-down">
-          <h1 class="home_title">
-            Hi, <br />I'm <span class="home_title-color">Dev Suthar</span
-            ><br />I'm a Student
-          </h1>
-          <a href="#contact" class="button"> Contact</a>
-        </div>
+        <div class="home_content">
+          <div class="home_data" data-aos="fade-down">
+            <h1 class="home_title">
+              Hi, <br />I'm <span class="home_title-color">Dev Suthar</span><br />I'm a Student
+            </h1>
+            <a href="https://drive.google.com/file/d/1ST9T_eaX6QFxbaOM5oFZSuli4E5bt-3F/view?usp=sharing" target="_blank" class="button">Resume</a>
+          </div>
 
-        <div class="home_social">
-          <a href="#" class="home_social-icon" data-aos="fade-down"
-            ><i class="bx bxl-facebook-circle"></i
-          ></a>
-          <a
-            href="#"
-            class="home_social-icon"
-            data-aos="fade-down"
-            data-aos-delay="250"
-            ><i class="bx bxl-instagram"></i
-          ></a>
-          <a
-            href="#"
-            class="home_social-icon"
-            data-aos="fade-down"
-            data-aos-delay="300"
-            ><i class="bx bxl-twitter"></i
-          ></a>
-          <a
-            href="#"
-            class="home_social-icon"
-            data-aos="fade-down"
-            data-aos-delay="350"
-            ><i class="bx bxl-github"></i
-          ></a>
-        </div> 
-
-        <div class="home_img" data-aos="fade-down" data-aos-delay="500">
-          <img src="img/myphoto.jpeg" alt="My photo" style="width: 100%; height: auto; max-width: 1144px; max-height: 637px;">
+          <div class="home_img" data-aos="fade-down" data-aos-delay="500">
+            <div class="img_container">
+              <img src="img/myphoto2.jpeg" alt="My photo">
+            </div>
+          </div>
         </div>
       </section>
 
@@ -102,19 +76,23 @@
             <p class="about_text">
               I am a Final-Year Computer Science and Engineering Student
               at National Institute of Technology, Surat. 
-              I am interested in the fields of Cyber Security and Data Science. 
+              <br/>
+              I am enthusiastic about cybersecurity and a strong leader who excels in teamwork. 
+              With excellent communication skills, I am always eager to learn, upskill and 
+              embrace new challenges while valuing diverse perspectives in dynamic environments.
             </p>
           </div>
         </div>
       </section>
 
-      <!-- SKILLS SECTION -->
-      <section class="skills section" id="skills">
-        <h2 class="section-title" data-aos="fade-down">Skills</h2>
+    <section class="skills section" id="skills">
+      <h2 class="section-title" data-aos="fade-down">Skills</h2>
+    
+      <div class="skills_container">
 
-        <div class="skills_container">
+        <div class="skills_subsection">
           <div class="skills_grid">
-          
+
             <div class="skills_item" data-aos="fade-up">
               <span class="skill_name">Python</span>
               <div class="skill_bar"></div>
@@ -129,7 +107,7 @@
               <span class="skill_name">HTML</span>
               <div class="skill_bar"></div>
             </div>
-            
+
             <div class="skills_item" data-aos="fade-up" data-aos-delay="100">
               <span class="skill_name">CSS</span>
               <div class="skill_bar"></div>
@@ -140,24 +118,40 @@
               <div class="skill_bar"></div>
             </div>
 
-            <div class="skills_item" data-aos="fade-up" data-aos-delay="200">
+            <div class="skills_item" data-aos="fade-up" data-aos-delay="100">
               <span class="skill_name">Node JS</span>
               <div class="skill_bar"></div>
             </div>
 
-            <div class="skills_item" data-aos="fade-up" data-aos-delay="200">
+            <div class="skills_item" data-aos="fade-up" data-aos-delay="100">
               <span class="skill_name">Express JS</span>
               <div class="skill_bar"></div>
             </div>
-            
-            <div class="skills_item" data-aos="fade-up" data-aos-delay="300">
+
+            <div class="skills_item" data-aos="fade-up" data-aos-delay="100">
               <span class="skill_name">MySQL</span>
               <div class="skill_bar"></div>
             </div>
 
           </div>
         </div>
-      </section>
+    
+        <div class="skills_subsection">
+          <h3 class="subsection-title">Certifications</h3>
+          <div class="skills_grid">
+            <div class="skills_item certification_item" data-aos="fade-up">
+              <span class="skill_name">Google Cybersecurity Certificate</span>
+              <a href="https://drive.google.com/file/d/1V58z7vKykgOjeZY1wWIL5cQs7DgQQ15V/view?usp=sharing" class="certification_link">View Certificate</a>
+            </div>
+            <div class="skills_item certification_item" data-aos="fade-up" data-aos-delay="100">
+              <span class="skill_name">IBM Backend Development with NodeJS and ExpressJS</span>
+              <a href="https://drive.google.com/file/d/1KnM1Ap4uROnyA5LXV3DnvI4h1kgstwZc/view?usp=sharing" class="certification_link">View Certificate</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
       <!-- EXPERIENCE SECTION -->
       
@@ -204,7 +198,7 @@
               <div class="work_content">
                 <div class="work_header">
                   <div class="work_icon">
-                    <img src="img/upl.png">
+                    <img src="img/nexus.jpeg">
                   </div>
                   <div class="work_info">
                     <h3>Nexus</h3>
@@ -215,10 +209,13 @@
                 <p class="work_description">
                   <ul class="work_description">
                     <li>
-                      Played a role in founding the club and hosting the first event.
+                      Played a pivotal role in establishing the club, that focused on upskilling and representing the CSE department.
                     </li>
                     <li>
-                      Hosted and Managed a competition called BlackBox during Mindbend event in SVNIT
+                      Successfully hosted and managed the "Blackbox" event in collaboration with Mindbend 
+                    </li>
+                    <li>
+                      Actively contributed to various events, enhancing teamwork abilities and fostering a supportive learning environment for peers.
                     </li>
                   </ul> 
                 </p>
@@ -233,7 +230,7 @@
                 <div class="work_content">
                   <div class="work_header">
                     <div class="work_icon">
-                      <img src="img/upl.png">
+                      <img src="img/mindbend.jpg">
                     </div>
                     <div class="work_info">
                       <h3>Mindbend</h3>
@@ -244,12 +241,18 @@
                   <p class="work_description">
                     <ul class="work_description">
                       <li>
-                        Played a role in founding the club and hosting the first event.
+                        Headed the sponsorship committee, cultivating relationships with companies and institutions to secure essential support.
+                      </li>
+                      <li>
+                        Engaged effectively with sponsors, enhancing collaboration and fostering partnerships to ensure the event's success.
+                      </li>
+                      <li>
+                        Facilitated effective communication between sponsors and the event team, ensuring alignment on goals and expectations throughout the planning process.
                       </li>
                     </ul>  
                   </p>
                   <div class="work_footer">
-                    <p>Club</p>
+                    <p>Volunteer</p>
                   </div>
                 </div>
               </div>
