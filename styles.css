@@ -308,19 +308,25 @@ img {
   line-height: 1.6;
 }
 
+/* skills_section.css */
 /* SKILLS */
 .skills_container {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 1rem;
-}
-
-.skills_subsection {
+  background: var(--white-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(14, 36, 49, 0.1);
+  padding: 1.5rem;
   margin-bottom: 2rem;
 }
 
+.skills_subsection {
+  margin-bottom: 1.5rem;
+}
+
 .subsection-title {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: var(--first-color);
   margin-bottom: 1rem;
   text-align: center;
@@ -340,7 +346,7 @@ img {
   box-shadow: 0 4px 15px rgba(14, 36, 49, 0.1);
   position: relative;
   overflow: hidden;
-  height: 80px;
+  height: 55px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -365,6 +371,19 @@ img {
   height: 3px;
   background-color: var(--first-color);
   width: 100%;
+}
+
+/* Certifications Section - Outside the main box */
+.certifications-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
 }
 
 .certification_item {
@@ -398,6 +417,21 @@ img {
 
   .certification_item {
     height: auto;
+  }
+  
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skills_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .skills_item {
+    height: 70px;
+    padding: 0.8rem;
   }
 }
 
